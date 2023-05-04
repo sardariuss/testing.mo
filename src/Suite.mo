@@ -48,6 +48,7 @@ module {
 
     public class Suite() {
         let s = Status.Status();
+        public func getStatus() : Status.Status { s };
 
         var indent = 0;
         public func print(t : Text) {

@@ -55,6 +55,7 @@ module {
 
     public class Suite<T>(state : T) {
         let s = Status.Status();
+        public func getStatus() : Status.Status { s };
 
         var _before : Testing<T> = doNothing<T>();
         public func before(c : Testing<T>) { _before := c; };
